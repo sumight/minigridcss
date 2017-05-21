@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../dist/minigrid.css" rel="stylesheet">
+        <style>
+        .box {
+            border: 1px dashed #999;
+            min-height: 50px;
+            /*line-height: 50px;*/
+            padding: 20px 0;
+            line-height: 1.5;
+            text-align: center;
+            background: #ded;
+        }
+        .container {
+            background: #dedede;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>GRID <small><small>simple flex grid, nothing more</small></small></h1>
+        <h2>Normal</h2>
+        <div class="row container">
+            <div class="box" style="width:100px">width:100px</div>
+            <div class="box" style="width:200px">width:200px</div>
+            <div class="box" style="width:300px">width:300px</div>
+            <div class="box" style="width:400px">width:400px</div>
+            <div class="box" style="width:500px">width:500px</div>
+        </div>
+        <h2>Grow</h2>
+        <div class="row container">
+            <div class="box" style="width:100px">width:100px</div>
+            <div class="grow box">← grow →</div>
+        </div>
+        <br>
+        <div class="row container">
+            <div class="box" style="width:100px">width:100px</div>
+            <div class="grow box">← grow →</div>
+            <div class="box" style="width:200px">width:200px</div>
+        </div>
+        <br>
+        <div class="row container">
+            <div class="grow box">← grow →</div>
+            <div class="box" style="width:200px">width:200px</div>
+        </div>
+        <br>
+        <div class="row container">
+            <div class="grow-1 box">grow-1</div>
+            <div class="grow-2 box">grow-2</div>
+            <div class="grow-3 box">grow-3</div>
+            <div class="grow-4 box">grow-4</div>
+        </div>
+        <br>
+        <div class="row container">
+            <div class="box" style="width:500px">width:500px</div>
+            <div class="grow-1 box">grow-1</div>
+            <div class="grow-2 box">grow-2</div>
+        </div>
+        <h2>Col Width 1/12</h2>
+        <div class="row container">
+            <div class="col-1 box">col-1</div>
+            <div class="col-1 box">col-1</div>
+            <div class="col-1 box">col-1</div>
+            <div class="col-1 box">col-1</div>
+            <div class="col-1 box">col-1</div>
+            <div class="col-1 box">col-1</div>
+            <div class="col-1 box">col-1</div>
+            <div class="col-1 box">col-1</div>
+            <div class="col-1 box">col-1</div>
+            <div class="col-1 box">col-1</div>
+            <div class="col-1 box">col-1</div>
+            <div class="col-1 box">col-1</div>
+
+            <div class="col-2 box">col-2</div>
+            <div class="col-2 box">col-2</div>
+            <div class="col-2 box">col-2</div>
+            <div class="col-2 box">col-2</div>
+            <div class="col-2 box">col-2</div>
+            <div class="col-2 box">col-2</div>
+
+            <div class="col-3 box">col-3</div>
+            <div class="col-3 box">col-3</div>
+            <div class="col-3 box">col-3</div>
+            <div class="col-3 box">col-3</div>
+
+            <div class="col-4 box">col-4</div>
+            <div class="col-4 box">col-4</div>
+            <div class="col-4 box">col-4</div>
+
+            <div class="col-6 box">col-6</div>
+            <div class="col-6 box">col-6</div>
+
+            <div class="col-12 box">col-12</div>
+        </div>
+        <h2>Prefix & Suffix</h2>
+        <div class="row container">
+            <div class="col-1 suffix-11 box">col-1<br>suffix-11</div>
+            <div class="col-1 prefix-1 suffix-10 box">col-1<br>prefix-1<br>suffix-10</div>
+            <div class="col-1 prefix-2 suffix-9 box">col-1<br>prefix-2<br>suffix-9</div>
+            <div class="col-1 prefix-3 suffix-8 box">col-1<br>prefix-3<br>suffix-8</div>
+            <div class="col-1 prefix-4 suffix-7 box">col-1<br>prefix-4<br>suffix-7</div>
+            <div class="col-1 prefix-5 suffix-6 box">col-1<br>prefix-5<br>suffix-6</div>
+            <div class="col-1 prefix-6 suffix-5 box">col-1<br>prefix-6<br>suffix-5</div>
+            <div class="col-1 prefix-7 suffix-4 box">col-1<br>prefix-7<br>suffix-4</div>
+            <div class="col-1 prefix-8 suffix-3 box">col-1<br>prefix-8<br>suffix-3</div>
+            <div class="col-1 prefix-9 suffix-2 box">col-1<br>prefix-9<br>suffix-2</div>
+            <div class="col-1 prefix-10 suffix-1 box">col-1<br>prefix-10<br>suffix-1</div>
+            <div class="col-1 prefix-11 box">col-1<br>prefix-11</div>
+        </div>
+        <h2>Gutter</h2>
+        <div class="row-gutter container">
+            <div class="box" style="width:100px">width:100px</div>
+            <div class="box" style="width:200px">width:200px</div>
+            <div class="box" style="width:300px">width:300px</div>
+            <div class="grow box">← grow →</div>
+        </div>
+        <br>
+        <div class="row-gutter container">
+
+            <div class="col-3 box">col-3</div>
+            <div class="col-3 box">col-3</div>
+            <div class="col-3 box">col-3</div>
+            <div class="col-3 box">col-3</div>
+            
+            <div class="col-3 suffix-9 box">col-3 <br> suffix-9</div>
+            <div class="col-3 prefix-3 suffix-6 box">col-3 <br> prefix-3 <br> suffix-6</div>
+            <div class="col-3 prefix-6 suffix-3 box">col-3 <br> prefix-6 <br> suffix-3</div>
+            <div class="col-3 prefix-9  box">col-3 <br> prefix-9 </div>
+
+        </div>
+    </body>
+</html>
