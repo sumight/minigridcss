@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="../dist/minigrid.css" rel="stylesheet">
         <style>
+        body {
+            margin: 10px;
+        }
         .box {
             border: 1px dashed #999;
             min-height: 50px;
@@ -111,25 +114,27 @@
             <div class="col-1 prefix-11 box">col-1<br>prefix-11</div>
         </div>
         <h2>Gutter</h2>
-        <div class="row-gutter container">
-            <div class="box" style="width:100px">width:100px</div>
-            <div class="box" style="width:200px">width:200px</div>
-            <div class="box" style="width:300px">width:300px</div>
-            <div class="grow box">← grow →</div>
+        <div class="container">
+            <div class="row-gutter">
+                <div class="box" style="width:100px">width:100px</div>
+                <div class="box" style="width:200px">width:200px</div>
+                <div class="box" style="width:300px">width:300px</div>
+                <div class="grow box">← grow →</div>
+            </div>
         </div>
         <br>
-        <div class="row-gutter container">
-
-            <div class="col-3 box">col-3</div>
-            <div class="col-3 box">col-3</div>
-            <div class="col-3 box">col-3</div>
-            <div class="col-3 box">col-3</div>
-            
-            <div class="col-3 suffix-9 box">col-3 <br> suffix-9</div>
-            <div class="col-3 prefix-3 suffix-6 box">col-3 <br> prefix-3 <br> suffix-6</div>
-            <div class="col-3 prefix-6 suffix-3 box">col-3 <br> prefix-6 <br> suffix-3</div>
-            <div class="col-3 prefix-9  box">col-3 <br> prefix-9 </div>
-
+        <div class="container">
+            <div class="row-gutter">
+                <div class="col-3 box">col-3</div>
+                <div class="col-3 box">col-3</div>
+                <div class="col-3 box">col-3</div>
+                <div class="col-3 box">col-3</div>
+                
+                <div class="col-3 suffix-9 box">col-3 <br> suffix-9</div>
+                <div class="col-3 prefix-3 suffix-6 box">col-3 <br> prefix-3 <br> suffix-6</div>
+                <div class="col-3 prefix-6 suffix-3 box">col-3 <br> prefix-6 <br> suffix-3</div>
+                <div class="col-3 prefix-9  box">col-3 <br> prefix-9 </div>
+            </div>
         </div>
     </body>
 </html>
